@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styls.css"/>
+</head>
+<body>
+    <div class="Header">
+        <div class="Header_2">
+            <img src="../site/5958272.png" height="120" width="120" alt="Логотип" class="Header_cont"> 
+            <div class="Header_links">
+                <div class="Header_links_col">
+                    <a href >Ссылка 1</a>
+                    <a href>Ссылка 2</a>
+                    <a href>Ссылка 3</a>
+                </div>
+            </div>
+            <h1 class="Header_cont"> Задание 2</h1>
+        </div>
+    </div>
+
+    <nav class="nav">
+        <a href="#ссылки" class="nav-link">Списки</a> <br>
+        <a href="#Таблица" class="nav-link">Таблица</a> <br>
+        <a href="#Форма" class="nav-link">Форма</a> <br>
+    </nav>
+
+
+    <div class="link-list"> <a id="ссылки"></a>
+        <ul>
+            <li><a href="http://kubsu.ru/">Абсолютная гиперссылка</a></li>
+            <li><a href="https://www.kubsu.ru/">Абсолютная гиперссылка https</a></li>
+            <li><a id="image"></a><a href="https://www.kubsu.ru/"><img src="../site/image_processing20201212-1514-10sgre4.jpg" alt="Ссылка-изображение" width="100" height="100"></a></a></li>
+            <li><a href="../site/page.html">Сокращенная ссылка на внутренную страницу</a></li>
+            <li><a href="/homepage.html">Сокращенная ссылка на главную страницу</a></li>
+            <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
+            <li><a href="https://rutube.ru/channel/23697301/videos/?param=1&param=2&param=3">Ссылка с тремя параметрами в URL</a></li>
+            <li><a href="https://rutube.ru/channel/23697301/videos?id=1">Ссылка с параметром id в URL</a></li>
+            <li><a href="/page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+            <li><a href="/about/aboutpage.html">Относительная ссылка на страницу в каталоге about</a></li>
+            <li><a href="../page_one.html">Относительная ссылка на страницу в каталоге уровнем выше</a></li>
+            <li><a href="../../page_two.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+            <li><a href="http://kubsu.ru/"><i>Контекстная ссылка в тексте абзаца</i></a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D1%83%D0%B1%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82#%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B8">Ссылка на фрагмент страницы стороннего сайта</a></li>
+        </ul>
+        <li>Ссылка из прямоугольных и круглых областей картинки (HTML-тег map)
+            <br>
+            <img src="https://iispacedustii.github.io/button_image.png" width="160" height="160" alt="Картинка" usemap="#map">
+            <map name="map">
+                <area shape="rect" coords="20,20,140,73" href="../site/page.html" alt="Прямоугольная область">
+                <area shape="circle" coords="80,127,33" href="../page_one.html" alt="Круглая область">
+            </map>
+        </li><p id = "fragment"></p>
+        <li><a href>ссылка с пустым href</a></li>
+        <li><a>ссылка без href</a></li>
+        <li><a href="http://kubsu.ru/" rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
+        <li><a href="http://kubsu.ru/" rel="noindex">Запрещенная сcылка для индексации поисковиками</a></li>
+        <li><a href="">Нумерованный список ссылок с подписями title</a></li>
+        <li><a href="ftp://mylogin:mypassword@site.com/file.html">ссылка на файл на сервере FTP с авторизацией</a></li>
+    </div>
+
+
+    <table class="table" id="Таблица">
+        <caption class="table_name">Таблица</caption>
+          <tr class="odd-cells">
+              <td>Столбец 1</td>
+              <td>Столбец 2</td>
+              <td>Столбец 3</td>
+              <td>Столбец 4</td>
+          </tr>
+          <tr class="even-cells">
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+          </tr>
+          <tr class="odd-cells">
+              <td>21</td>
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+          </tr>
+          <tr class="even-cells">
+              <td colspan="4">
+                  Объединённая ячейка
+              </td>
+          </tr>
+          <tr class="odd-cells">
+              <td>31</td>
+              <td>32</td>
+              <td>33</td>
+              <td>34</td>
+          </tr>
+          <tr class="even-cells">
+              <td>41</td>
+              <td>42</td>
+              <td>43</td>
+              <td>44</td>
+          </tr>
+    </table>
+
+    <div class="form" id="Форма">
+        <form action="/" method="post">
+            
+            <div class="col">
+            <br><br/><label>ФИО:</label><br><br/>
+            <input type="text" placeholder="Введите ФИО">
+            </div>
+
+            <div class="col">
+            <br><br/><label>Номер телефона:</label><br><br/>
+            <input type="tel" placeholder="8-915-ххх-(хх)-(хх)" pattern="^[ 0-9]+$">
+            </div>
+
+            <div class="col">
+            <br><br/><label>Адрес электронной почты:</label><br><br/>
+            <input type="email" placeholder="example@mail.ru">
+            </div>
+
+            <div class="col">
+            <br><br/><label>Дата рождения:</label><br><br/>
+            <input type="date">
+            </div>
+
+            <div class="col">
+            <br><br/><label>Пол</label><br><br/>
+            <label><input type="radio" name="sex_group" value="0">Мужской</label>
+            <label><input type="radio" name="sex_group" value="1">Женский</label>
+            </div>
+
+            <div class="col">
+            <label>
+                <br><br/><label>Любимый язык программирования:</label><br><br/>
+                <select name="lang_field" type="multiple">
+                    <option value="listboxVal1">C</option>
+                    <option value="listboxVal1">C+</option>
+                    <option value="listboxVal1">C++</option>
+                    <option value="listboxVal1">C#</option>
+                    <option value="listboxVal1">Java</option>
+                    <option value="listboxVal1">JavaScript</option>
+                    <option value="listboxVal1">PHP</option>
+                    <option value="listboxVal1">RUST</option>
+                </select>
+            </label>
+            </div>
+
+            <div class="col">
+            <br><br/><label>Биография</label><br><br/>
+            <textarea></textarea>
+            </div>
+
+            <div class="col">
+            <br><br/>
+            <input type="checkbox"> <label>Ознакомлен(а) с правилами пользования</label>
+            </div>
+
+            <div class="col">
+            <br><br/>
+            <input type="submit">
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer" id="footer">
+        <p>(с) Жаке Александр</p>
+      </footer>
+</body>
+</html>
