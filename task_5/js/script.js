@@ -11,7 +11,6 @@ function toCalculate() {
     console.log(result);
     return false;
 };
-
 document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOM fully loaded and parsed");
     let buttonA = document.getElementById("calculate");
