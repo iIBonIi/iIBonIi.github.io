@@ -12,9 +12,8 @@ body{
 .Header_2 {
     
     height: 200px;
-    margin: -10px -9px 10px -10px;
-    /*padding: 20px 23% 0px 23%;*/
-    padding: 4px 0% 0px 2%;
+    margin: -10px -9px 0px -10px;
+    padding: 4px 0% 80px 2%;
     background-color: rgb(56, 58, 66); 
 }
 
@@ -24,7 +23,7 @@ body{
     max-width: 1000px;
     color: rgb(10, 219, 195);
     font-size: 25px;
-    padding: 55px;
+    padding: 5px;
     
 }
 .Header_links_col{
@@ -33,6 +32,7 @@ body{
 }
 .Header_cont{
     color: rgb(4, 255, 180);
+    text-align: center;
 }
 a:link, a:visited{
     color:rgb(10, 219, 195);
@@ -41,32 +41,23 @@ a:link, a:visited{
 a:hover{
     color: rgb(27, 244, 193);
 }
-.nav {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: block;
-    font-size: 20px;
-    padding: 30px 0px;
-    width: 100%;
-    background-color:rgba(66,66,58,0.2);
-  }
-  
+
 .nav-link {
     display: block;
     max-width:800px; 
     background-color:rgba(54, 61, 73, 0.5); 
     margin: auto; 
-    margin-top: 20px; 
-    margin-bottom: 20px; 
+    margin-top: 0px; 
+    margin-bottom: 0px; 
     text-align: center;
-    padding:10px;
+    
 }
 .link-list {
     display: block;
     max-width: 960px;
     font-size: 30px;
     margin: auto;
-    margin-top: 2%;
+    margin-top: 110px;
     margin-bottom: 2%;
     padding: 2%;
     align-items: center;
@@ -76,17 +67,6 @@ a:hover{
   .table {
     display: block;
     margin: 0% 30% 0% 30%;
-    
-    /*
-    display: block;
-    margin: 425px;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    padding-bottom: 2%;
-    padding-right: 5%;
-    padding-left: 5%;
-    background-color:rgba(66,66,58,0.2);
-    */
 }
 
 td {
@@ -135,6 +115,16 @@ textarea{
     color: black;
 }
 @media screen and (max-width: 960px) {
+    .nav-link {
+        display: block;
+        max-width:800px; 
+        background-color:rgba(54, 61, 73, 0.5); 
+        margin: auto; 
+        margin-top: 1px; 
+        margin-bottom: 1px; 
+        text-align: center;
+        padding:10px;
+    }
     .Header{
         background-color: rgb(79, 84, 97);
         width:100%; 
@@ -148,11 +138,12 @@ textarea{
     
 
     .Header_links{
-        float: right;
-        max-width: 1000px;
+        float:none;
+        max-width: 100%;
         color: rgb(10, 219, 195);
         font-size: 15px;
-        padding: 1%;
+        padding: 4%;
+        padding-top: 100px;
     }
 
     .Header_links_col{
@@ -167,16 +158,6 @@ textarea{
     font-size: 20px;
     }
 
-    .nav {
-        margin-top: 100px;
-        margin-bottom: 30px;
-        display: block;
-        font-size: 20px;
-        padding: 30px 0px;
-        width: 100%;
-        background-color:#42423a33;
-    }
-
     .table {
         display: block;
         margin: 0%;
@@ -187,11 +168,12 @@ textarea{
     }
 
     .link-list {
+
         display: block;
         max-width: 960px;
         font-size: 10px;
         margin: auto;
-        margin-top: 2%;
+        margin-top: 340px;
         margin-bottom: 2%;
         padding: 2%;
         align-items: center;
