@@ -19,15 +19,15 @@ function calculatePrice() {
 
   switch (serviceType) {
     case '1':
-      totalPrice = prices.type1 * quantity; // Для типа 1 только базовая цена
+      totalPrice = prices.type1 * quantity; // Тип 1 только базовая цена
       break;
     case '2':
-      totalPrice = prices.type2 * quantity; // Для типа 2 базовая цена + выбранная опция
+      totalPrice = prices.type2 * quantity; // Тип 2 базовая цена + выбранная опция
       const selectedOption = document.getElementById("options").value;
       totalPrice += optionsPrice[selectedOption] * quantity;
       break;
     case '3':
-      totalPrice = prices.type3 * quantity; // Для типа 3 базовая цена + выбранное свойство
+      totalPrice = prices.type3 * quantity; // Тип 3 базовая цена + выбранное свойство
       const isPropertyChecked = document.getElementById("property").checked;
       if (isPropertyChecked) {
         totalPrice += propertyPrice * quantity;
@@ -41,6 +41,7 @@ function calculatePrice() {
 function updateFormFields() {
   const serviceType = document.querySelector('input[name="service-type"]:checked').value;
 
+  // Показать/скрыть элементы формы в зависимости от типа товара
   if (serviceType === '1') {
     document.getElementById("type2-options").classList.add('hidden');
     document.getElementById("type3-properties").classList.add('hidden');
@@ -55,17 +56,16 @@ function updateFormFields() {
   calculatePrice();
 }
 
+// Слушатели событий
 document.getElementById("quantity").addEventListener("input", calculatePrice);
-
 document.querySelectorAll('input[name="service-type"]').forEach(radio => {
   radio.addEventListener("change", () => {
     updateFormFields();
     calculatePrice();
   });
 });
-
 document.getElementById("options").addEventListener("change", calculatePrice);
-
 document.getElementById("property").addEventListener("change", calculatePrice);
 
+// Инициализация формы при загрузке страницы
 window.onload = updateFormFields;
