@@ -1,0 +1,104 @@
+/* Основное оформление */
+body {
+  background-color: #333;  /* Темный фон для всей страницы */
+  color: aqua;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  justify-content: space-evenly;
+}
+
+/* Стиль галереи */
+.gallery-container {
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider img {
+  width: 33.33%;  /* Показываем 3 изображения за раз на десктопе */
+  height: auto;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 10px;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+.pager {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .slider img {
+      width: 100%;
+  }
+}
+
+/* Стиль калькулятора */
+.calculator-container {
+  background-color: #222;
+  color: aqua;
+  text-align: center;
+  width: 400px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label, select, input {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  font-size: 16px;
+}
+
+input[type="number"], select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
