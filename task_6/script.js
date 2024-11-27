@@ -1,13 +1,4 @@
 
-// Обновление слайдера и пейджера
-function updateGallery() {
-    const slider = document.querySelector('.slider');
-    const pageInfo = document.getElementById('page-info');
-    
-    slider.style.transform = `translateX(-${currentIndex * (100 / imagesPerPage)}%)`;  // Перемещаем слайдер
-    pageInfo.textContent = `Страница ${Math.floor(currentIndex / imagesPerPage) + 1} из ${totalPages}`;
-}
-
 // Калькулятор
 let pricePerUnit = 100;  // Базовая цена за единицу товара
 
