@@ -1,6 +1,5 @@
-/* Основное оформление */
 body {
-  background-color: #333;  /* Темный фон для всей страницы */
+  background-color: #333;
   color: aqua;
   font-family: Arial, sans-serif;
   display: flex;
@@ -42,7 +41,6 @@ button.next {
   }
 }
 
-/* Стиль калькулятора */
 .calculator-container {
   background-color: #222;
   color: aqua;
