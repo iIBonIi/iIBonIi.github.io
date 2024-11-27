@@ -1,0 +1,117 @@
+/* Общие стили для страницы */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #444;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="number"],
+select,
+input[type="radio"],
+input[type="checkbox"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  background-color: #555;
+  color: #fff;
+  border: 1px solid #888;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #00FFFF;
+  color: #333;
+  border: 1px solid #888;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
+}
+
+button:hover {
+  background-color: #00b3b3;
+}
+
+/* Стили для галереи */
+.gallery-container {
+  width: 80%; /* Ограничиваем ширину галереи */
+  max-width: 800px; /* Максимальная ширина контейнера */
+  position: relative;
+  overflow: hidden; /* Скрываем изображения, которые выходят за пределы */
+}
+
+.gallery {
+  display: flex;
+  transition: transform 0.3s ease; /* Плавная анимация прокрутки */
+}
+
+.gallery-item {
+  width: 25%; /* Изменяем размер картинок на 25%, чтобы они были меньше */
+  object-fit: cover; /* Чтобы картинки не искажались */
+  transition: transform 0.3s ease;
+  margin: 0 5px; /* Отступы между изображениями */
+}
+
+/* Стрелки навигации */
+.gallery-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Распределение стрелок по ширине */
+  transform: translateY(-50%);
+}
+
+.arrow {
+  background: rgba(0, 255, 255, 0.5);
+  border: none;
+  color: #333;
+  font-size: 2em;
+  padding: 10px;
+  cursor: pointer;
+  /* Увеличим отступ между стрелками */
+  margin-left: 0px; /* Добавляем отступ слева для первой стрелки */
+  margin-right: 0px; /* Добавляем отступ справа для второй стрелки */
+}
+
+.arrow:hover {
+  background: rgba(0, 255, 255, 0.7);
+}
+
+
+/* Пейджер */
+.pager {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.current-page {
+  font-weight: bold;
+}
