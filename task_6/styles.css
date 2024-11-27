@@ -11,32 +11,6 @@ body {
   justify-content: space-evenly;
 }
 
-/* Стиль галереи */
-.gallery-container {
-  text-align: center;
-  width: 80%;
-  max-width: 800px;
-  margin-bottom: 40px;
-}
-
-.gallery {
-  display: flex;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-
-.slider {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.slider img {
-  width: 33.33%;  /* Показываем 3 изображения за раз на десктопе */
-  height: auto;
-}
-
 button {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
