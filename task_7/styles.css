@@ -61,7 +61,7 @@ button:hover {
 
 
 .gallery-container {
-  width: 80%;
+  width: 100%;
   max-width: 800px;
   position: relative;
   overflow: hidden;
@@ -76,7 +76,7 @@ button:hover {
   width: 24%;
   object-fit: cover;
   transition: transform 0.3s ease;
-  margin: 0 5px;
+  margin: 0 305px;
 }
 
 .gallery-nav {
