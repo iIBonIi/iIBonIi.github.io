@@ -1,4 +1,4 @@
-/* Общие стили для страницы */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -59,33 +59,32 @@ button:hover {
   background-color: #00b3b3;
 }
 
-/* Стили для галереи */
+
 .gallery-container {
-  width: 80%; /* Ограничиваем ширину галереи */
-  max-width: 800px; /* Максимальная ширина контейнера */
+  width: 80%;
+  max-width: 800px;
   position: relative;
-  overflow: hidden; /* Скрываем изображения, которые выходят за пределы */
+  overflow: hidden;
 }
 
 .gallery {
   display: flex;
-  transition: transform 0.3s ease; /* Плавная анимация прокрутки */
+  transition: transform 0.3s ease;
 }
 
 .gallery-item {
-  width: 25%; /* Изменяем размер картинок на 25%, чтобы они были меньше */
-  object-fit: cover; /* Чтобы картинки не искажались */
+  width: 24%;
+  object-fit: cover;
   transition: transform 0.3s ease;
-  margin: 0 5px; /* Отступы между изображениями */
+  margin: 0 5px;
 }
 
-/* Стрелки навигации */
 .gallery-nav {
   position: absolute;
   top: 50%;
   width: 100%;
   display: flex;
-  justify-content: space-between; /* Распределение стрелок по ширине */
+  justify-content: space-between;
   transform: translateY(-50%);
 }
 
@@ -96,9 +95,9 @@ button:hover {
   font-size: 2em;
   padding: 10px;
   cursor: pointer;
-  /* Увеличим отступ между стрелками */
-  margin-left: 0px; /* Добавляем отступ слева для первой стрелки */
-  margin-right: 0px; /* Добавляем отступ справа для второй стрелки */
+
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .arrow:hover {
@@ -106,7 +105,6 @@ button:hover {
 }
 
 
-/* Пейджер */
 .pager {
   text-align: center;
   margin-top: 10px;
