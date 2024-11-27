@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const totalPagesElem = document.querySelector('.total-pages');
     
     const totalItems = items.length;
-    const itemsPerPage = 4;
+    const itemsPerPage = 1;
     const totalPages = Math.ceil(totalItems / itemsPerPage);
   
     let currentPage = 1;
