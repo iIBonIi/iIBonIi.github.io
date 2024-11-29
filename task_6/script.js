@@ -10,6 +10,11 @@ function calculatePrice() {
 
     let price = pricePerUnit * quantity;
 
+    if (quantity < 0) {
+        document.getElementById('price').textContent = 'Некорректное значение';
+        return;
+    }
+
     if (productType.value === 'type2') {
         if (options.value === 'option1') {
             price += 50;
